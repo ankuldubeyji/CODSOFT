@@ -5,11 +5,12 @@ class GuessTheNumber
     {
         System.out.println("WELCOME TO NUMBER GUESSING GAME");
         System.out.println("RULES: \n1.YOU HAVE ONLY 10 CHANCE\n2.YOU HAVE GUESS NUMBER BETWEEN RANGE 1 TO 100");
-        Random random=new Random();
-        int randum_number=random.nextInt(100);
-        Scanner sc=new Scanner(System.in);
+       Scanner sc=new Scanner(System.in);
         do
         {
+           Random random=new Random();
+          int randum_number=random.nextInt(100);
+          
            int attempt=0;
            while(attempt!=10)
           {
